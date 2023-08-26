@@ -1,0 +1,49 @@
+#PantallaVistaTurnosContainer{
+    height: 1080px;
+    width: 1920px;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+}
+
+#numeroTurnoLabel{
+    font-size: 500px;
+    margin: auto;
+    margin-top: 155px;
+    margin-right: 35px;
+    text-align: center;
+    color: white;
+    user-select: none
+}
+
+.pop-outin {
+    animation: 2s anim-popoutin ease 1;
+  }
+  
+  @keyframes anim-popoutin {
+    0% {
+      color: black;
+      transform: scale(0);
+      opacity: 0;
+      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    25% {
+      color: rgb(255, 115, 0);
+      transform: scale(2);
+      opacity: 1;
+      text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+      color: rgb(0, 0, 0);
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      /* animate nothing to add pause at the end of animation */
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+  
